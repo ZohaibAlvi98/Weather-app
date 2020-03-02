@@ -1,0 +1,34 @@
+<%- include('partials/header') %>
+
+
+    <div class="app-title">
+        <p><strong>Weather</strong></p>
+    </div>
+    
+        <div class="weather-icon">
+            <img src="/stylesheet/icons/02d.png">
+        </div>
+        <div class="temperature-value">
+            <p><%= data.current.temperature %>°<span>C</span></p>
+        </div>
+        <div class="temperature-description">
+            <p><%= data.current.weather_descriptions %></p>
+        </div>
+        <div class="location">
+            <p> <%= data.request.query %> </p>
+        </div>
+
+
+
+
+
+<!-- 
+<ul>
+    <% for(var value in data.request) { %>
+    <% var propValue  = data.request[value] %> 
+        <li>    <%= value %> <%= propValue %> </li> 
+     
+   <%  } %>
+   </ul> -->
+
+<%- include('partials/footer') %>

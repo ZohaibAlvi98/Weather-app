@@ -1,0 +1,192 @@
+*{
+    font-family: "Rimouski";
+}
+
+
+.container{
+    width: 300px;    
+    background-color: #FFF;
+    
+    display: block;
+    margin: 0 auto;
+    
+    border-radius: 10px;
+    padding-bottom : 50px;
+}
+
+.app-title{
+    width: 280px;
+    height: 50px;
+    border-radius: 10px 10px 0 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    font-family: sans-serif;
+}
+
+.app-title p{
+    text-align: center;
+    padding: 15px;
+    margin: 0 auto;
+    font-size: 1.2em;
+   
+}
+
+.notification{
+    background-color: #f8d7da;
+    display: none;
+}
+
+.notification p{
+    color: #721c24;
+    font-size: 1.2em;
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.weather-container{
+    width: 300px;
+    height: 260px;
+    background-color: #F4F9FF;
+}
+
+.weather-icon{
+    width: 300px;
+    height: 128px;
+}
+
+.weather-icon img{
+    display: block;
+    margin: 0 auto;
+}
+
+.temperature-value{
+    width: 300px;
+    height:60px;
+}
+
+.temperature-value p{
+    padding: 0;
+    margin: 0;
+   
+    font-size: 4em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.temperature-value p:hover{
+    
+}
+
+.temperature-value span{
+   
+    font-size: 0.5em;
+}
+
+.temperature-description{
+    width: 280px;
+    font-size: x-large; 
+}
+
+.temperature-description p{
+    padding: 8px;
+    margin: 0;
+   
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.location{
+    width: 280px;
+    font-size: x-large;
+}
+
+.location p{
+    margin: 0;
+    padding: 0;
+   
+    text-align: center;
+    font-size: 0.8em;
+}
+body {
+    background: #000;
+    font-family: sans-serif;
+}
+
+#header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    padding-top: 15vh;
+    background: rgba(0, 0, 0, 0.3);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+  }
+#header  {
+    color: #fff;
+  }
+.same {
+    color: #fff;
+    background-color: black;
+}
+  .slideshow { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+
+  .slideshow li { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 50s linear infinite; 
+  }
+
+  .slideshow li:nth-child(1) { 
+    background-image: url(https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=401&q=80) 
+  }
+  .slideshow li:nth-child(2) { 
+    background-image: url(https://www.popsci.com/resizer/im78cdaBIZjnP3PhEd2jjnMuGc8=/760x506/arc-anglerfish-arc2-prod-bonnier.s3.amazonaws.com/public/7C57S3CKP3QSKGMAV6ZL5CNX5E.jpg);
+    animation-delay: 10s; 
+  }
+  .slideshow li:nth-child(3) { 
+    background-image: url(https://images.unsplash.com/photo-1574661424862-f50cdaf56502?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=889&q=80);
+    animation-delay: 20s; 
+  }
+ 
+
+  @keyframes imageAnimation { 
+    0% { 
+      opacity: 0; 
+      animation-timing-function: ease-in;
+    }
+    30% {
+      opacity: 1;
+      animation-timing-function: ease-out;
+    }
+    40% {
+      opacity: 1
+    }
+  }
+  
+
+
